@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lila Rajput | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Header and Navbar */
+    .header {
+      background: linear-gradient(to right, #4b0082, #6a0dad); /* purple gradient */
+      color: white;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .left-info h2 {
+      margin-bottom: 5px;
+    }
+
+    .left-info p {
+      margin: 3px 0;
+    }
+
+    .navbar {
+      flex: 1;
+      text-align: right;
+    }
+
+    .nav-links {
+      list-style: none;
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .nav-links a:hover {
+      text-decoration: underline;
+      color: #ffd6ff;
+    }
+
+    section {
+      padding: 40px;
+    }
+
+    /* About Section */
+    #about {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      background-color: #f9f6ff;
+      flex-wrap: wrap;
+    }
+
+    .image img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .info p {
+      margin-top: 10px;
+      max-width: 600px;
+    }
+
+    /* Skills */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .grid-item img {
+      width: 60px;
+      height: 60px;
+    }
+
+    /* Projects */
+    .project {
+      background-color: #f0f0f0;
+      margin-bottom: 20px;
+      padding: 15px;
+      border-radius: 8px;
+    }
+
+    /* Recommendations */
+    #recordm {
+      background-color: #f5f5f5;
+    }
+
+    .recommendation {
+      margin-bottom: 15px;
+      padding: 10px;
+      background-color: #fff;
+      border-left: 4px solid #4caf50;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    textarea {
+      width: 100%;
+      max-width: 500px;
+      margin-top: 10px;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #6a0dad;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #4b0082;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="left-info">
+      <h2>Lila Rajput</h2>
+      <p><i class="fa-solid fa-phone"></i> 1234567890</p>
+      <p><i class="fa-solid fa-envelope"></i> lila@gmail.com</p>
+    </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#recordm">Recommendations</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="image">
+      <img src="user.jpg" alt="Lila's photo">
+    </div>
+    <div class="info">
+      <h1>Hello, I am Lila Rajput! 👋</h1>
+      <p>
+        I'm a passionate and detail-oriented software developer with a strong foundation in full-stack development. I specialize in building efficient, scalable, and user-focused applications. With a problem-solving mindset and a drive to keep learning, I aim to deliver clean, reliable code and contribute meaningfully to impactful projects.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h3>SKILLS</h3>
+    <div class="grid-container">
+      <div class="grid-item">
+        <img src="html.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="grid-item">
+        <img src="css.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="grid-item">
+        <img src="javascript.png" alt="JavaScript">
+        <p>JavaScript</p>
+      </div>
+      <div class="grid-item">
+        <img src="react.png" alt="React">
+        <p>React</p>
+      </div>
+      <div class="grid-item">
+        <img src="node.png" alt="Node.js">
+        <p>Node.js</p>
+      </div>
+      <div class="grid-item">
+        <img src="express.png" alt="Express.js">
+        <p>Express.js</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h3>PROJECTS</h3>
+    <div class="project">
+      <h4>Portfolio Website</h4>
+      <p>Designed and developed a personal portfolio to showcase my skills and projects.</p>
+    </div>
+    <div class="project">
+      <h4>Hotel Reservation System</h4>
+      <p>A full-stack application to book hotels, manage user data, and view room availability.</p>
+    </div>
+    <div class="project">
+      <h4>Pharmacy Website</h4>
+      <p>An e-commerce frontend for a pharmacy store built using HTML, CSS, and React.</p>
+    </div>
+  </section>
+
+  <!-- Recommendations Section -->
+  <section id="recordm">
+    <h3>RECOMMENDATIONS</h3>
+
+    <div id="recommendation-list">
+      <div class="recommendation">"Lila's code is clean and her logic is solid!" – Mentor</div>
+      <div class="recommendation">"A fast learner and a great team player." – Teammate</div>
+      <div class="recommendation">"Reliable and always meets deadlines." – Project Lead</div>
+    </div>
+
+    <h4>Add Your Recommendation</h4>
+    <textarea id="new-rec" rows="4" placeholder="Write your recommendation here..."></textarea><br>
+    <button onclick="addRecommendation()">Submit</button>
+  </section>
+  <a href="#header"><h3>Go back Home</h3></a>
+
+  <!-- JS -->
+  <script>
+    function addRecommendation() {
+      const input = document.getElementById("new-rec");
+      const value = input.value.trim();
+      if (value === "") {
+        alert("Please write something before submitting.");
+        return;
+      }
+      const newDiv = document.createElement("div");
+      newDiv.className = "recommendation";
+      newDiv.textContent = `"${value}" – Anonymous`;
+      document.getElementById("recommendation-list").appendChild(newDiv);
+      input.value = "";
+      alert("Thank you for submitting a recommendation!");
+    }
+  </script>
+
+</body>
+</html>
